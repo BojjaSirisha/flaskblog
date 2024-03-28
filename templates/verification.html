@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>verification page</title>
+        <meta charset="UTF-8">
+        <meta name="viewpoint">
+    </head>
+    <body>
+        <h1>OTP</h1>
+        <form method="POST" action="{{url_for('otp',username=username,password=password,email=email,mobile=mobile,address=address,otp=otp)}}">
+        <label for="">Enter OTP:</label>
+        <input name="uotp" type="text"><br>
+        <button>Submit</button>
+        </form>
+    </body>
+</html>
